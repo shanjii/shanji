@@ -1,0 +1,59 @@
+.sidebar {
+    transition: linear, 100ms;
+    background-color: rgb(27, 27, 27);
+    width: 7rem;
+    -webkit-box-shadow: 1px 0px 20px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 0px 20px 2px rgba(0, 0, 0, 1);
+    box-shadow: 1px 0px 20px 2px rgba(0, 0, 0, 1);
+}
+
+.avatar {
+    transition: linear, 100ms;
+    width: 5rem;
+}
+
+.navButtonText {
+    display: none;
+}
+
+.navButton {
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar:hover {
+    width: 16rem;
+}
+
+.navIcon {
+    transition: ease-in, 400ms;
+}
+
+.navButton:hover {
+    transition: ease-in, 400ms;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.sidebar:hover>div>ul>li>.navButtonText {
+    display: block;
+}
+
+.navIcon {
+    filter: invert(100);
+}
+
+.navButton:hover>.navIcon {
+    filter: invert(100);
+}
+
+.sidebar:hover>div>.avatar {
+    width: 14rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+    
+}
