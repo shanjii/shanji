@@ -40,11 +40,11 @@
 }
 
 .navIcon {
-    filter: invert(100);
+    filter: invert(1);
 }
 
 .navButton:hover>.navIcon {
-    filter: invert(100);
+    filter: invert(1);
 }
 
 .sidebar:hover>div>.avatar {

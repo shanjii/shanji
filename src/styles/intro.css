@@ -15,6 +15,10 @@
     width: 50px;
 }
 
+.socialMediaIcons:hover{
+    filter: invert(0.4);
+}
+
 
 @media only screen and (max-width: 1200px) {
     .title {
