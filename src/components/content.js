@@ -5,7 +5,7 @@ window.onresize = () => {
 
 export function Content() {
     return (
-        <div id="content" style={{ height: window.innerHeight, position: 'relative', top: '100vh'}}>
+        <div id="content" style={{ height: '1000px', position: 'relative', top: window.innerHeight}}>
             
         </div>
     )
