@@ -1,3 +1,4 @@
 #content {
     background-color: rgb(27, 27, 27);
+    transition: ease-in, 100ms;
 }
