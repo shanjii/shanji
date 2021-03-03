@@ -5,6 +5,7 @@ import Arrow from '../assets/arrow.svg'
 import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
+var height = window.innerHeight
 
 class Intro extends Component {
     constructor() {
@@ -60,7 +61,7 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ height: '100vh', width: '100%', position: 'fixed'}}>
+            <div style={{ height: (height + 'px'), width: '100%', position: 'fixed' }}>
                 <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
