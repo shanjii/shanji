@@ -9,10 +9,6 @@ window.onresize = () => {
     document.getElementById("introBox").style.height = window.innerHeight + 'px'
 }
 
-function scrollToContent() {
-    window.scrollTo(0, window.innerHeight)
-}
-
 class Intro extends Component {
     constructor() {
         super();
@@ -74,7 +70,9 @@ class Intro extends Component {
                     <a target="_blank" rel="noreferrer" href="https://github.com/shanjii"><img className="socialMediaIcons" alt="github" style={{ padding: 5 }} src={github} /></a>
                 </div>
                 <div className="arrowBox" style={{ position: 'absolute', bottom: 0, width: '100%' }}>
-                    <img onClick={scrollToContent} alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
+                    <a href="#content">
+                        <img alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
+                    </a>
                 </div>
             </div>
         );
