@@ -63,7 +63,7 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight+300, transition: 'ease-in, 200ms' }} id="introBox" >
+            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight, transition: 'ease-in, 200ms' }} id="introBox" >
                 <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
@@ -73,7 +73,7 @@ class Intro extends Component {
                     <a target="_blank" rel="noreferrer" href="https://twitter.com/Shanji_ra"><img className="socialMediaIcons" alt="twitter" style={{ padding: 5 }} src={twitter} /></a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/shanjii"><img className="socialMediaIcons" alt="github" style={{ padding: 5 }} src={github} /></a>
                 </div>
-                <div className="arrowBox" style={{ position: 'absolute', bottom: 300, width: '100%' }}>
+                <div className="arrowBox" style={{ position: 'absolute', bottom: 0, width: '100%' }}>
                     <img onClick={scrollToContent} alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
                 </div>
             </div>
