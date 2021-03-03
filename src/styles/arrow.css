@@ -8,10 +8,6 @@
     cursor: pointer;
 }
 
-.arrowBox{
-    transition: ease-in, 100ms;
-}
-
 @keyframes animation {
     from {bottom: 0px;}
     to {bottom: 20px;}

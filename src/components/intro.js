@@ -63,7 +63,7 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight }} id="introBox" >
+            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight, transition: 'ease-in, 200ms' }} id="introBox" >
                 <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
