@@ -29,6 +29,10 @@ class Intro extends Component {
         }, 100);
     }
 
+    scrollToContent() {
+        window.scrollTo(0, window.innerHeight)
+    }
+
     fillSubtitle() {
         var i = 0
         var interval = setInterval(() => {
@@ -56,8 +60,8 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ height: '100vh', width: '100%' }}>
-                <div className="introTitles" style={{ position: 'absolute', top: '37vh' }}>
+            <div style={{ height: '100vh', width: '100%', position: 'fixed'}}>
+                <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
                 </div>
@@ -67,9 +71,7 @@ class Intro extends Component {
                     <a target="_blank" rel="noreferrer" href="https://github.com/shanjii"><img className="socialMediaIcons" alt="github" style={{ padding: 5 }} src={github} /></a>
                 </div>
                 <div style={{ position: 'absolute', bottom: 0, width: '100%' }}>
-                    <a href="as">
-                        <img alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
-                    </a>
+                    <img onClick={this.scrollToContent} alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
                 </div>
             </div>
         );

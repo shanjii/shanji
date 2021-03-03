@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div className="background">
-      <Sidebar />
-      <div className="contentMargin">
+      {/* <Sidebar /> */}
+      <div>
         <Intro />
-        <Content/>
+        <Content />
       </div>
     </div>
   );
