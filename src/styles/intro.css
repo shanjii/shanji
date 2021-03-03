@@ -1,21 +1,27 @@
 .introTitles {
     color: rgb(27, 27, 27);
+    transition: ease-in, 200ms;
     margin-left: 10rem;
 }
 
 .title {
     font-size: 140px;
+    transition: ease-in, 200ms;
+
 }
 
 .subtitle {
     font-size: 70px;
+    transition: ease-in, 200ms;
 }
 
 .socialMediaIcons {
+    transition: ease-in, 200ms;
     width: 50px;
 }
 
 .socialMediaIcons:hover{
+    transition: ease-in, 100ms;
     filter: invert(0.4);
 }
 
@@ -29,25 +35,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .title {
-        font-size: 40px;
-        text-align: center;
-    }
-    .subtitle {
-        font-size: 22px;
-        text-align: center;
-    }
-    .introTitles {
-        margin-left: 0;
-        width: 100%;
-    }
-    .socialMediaIcons {
-        width: 30px;
-    }
-}
-
-@media only screen and (max-height: 600px) {
+@media only screen and (max-width: 1000px), screen and (max-height: 600px) {
     .title {
         font-size: 40px;
         text-align: center;

@@ -5,7 +5,13 @@ import Arrow from '../assets/arrow.svg'
 import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
-var height = window.innerHeight
+window.onresize = () => {
+    document.getElementById("introBox").style.height = window.innerHeight + 'px'
+}
+
+function scrollToContent() {
+    window.scrollTo(0, window.innerHeight)
+}
 
 class Intro extends Component {
     constructor() {
@@ -28,10 +34,6 @@ class Intro extends Component {
                 this.fillSubtitle()
             }
         }, 100);
-    }
-
-    scrollToContent() {
-        window.scrollTo(0, window.innerHeight)
     }
 
     fillSubtitle() {
@@ -61,7 +63,7 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ height: (height + 'px'), width: '100%', position: 'fixed' }}>
+            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight }} id="introBox" >
                 <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
@@ -71,8 +73,8 @@ class Intro extends Component {
                     <a target="_blank" rel="noreferrer" href="https://twitter.com/Shanji_ra"><img className="socialMediaIcons" alt="twitter" style={{ padding: 5 }} src={twitter} /></a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/shanjii"><img className="socialMediaIcons" alt="github" style={{ padding: 5 }} src={github} /></a>
                 </div>
-                <div style={{ position: 'absolute', bottom: 0, width: '100%' }}>
-                    <img onClick={this.scrollToContent} alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
+                <div className="arrowBox" style={{ position: 'absolute', bottom: 0, width: '100%' }}>
+                    <img onClick={scrollToContent} alt="arrow" className="arrow" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} width={50} src={Arrow} />
                 </div>
             </div>
         );
