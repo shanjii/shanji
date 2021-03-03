@@ -17,17 +17,17 @@ class Intro extends Component {
         }
     }
 
-    componentDidMount = () => {
-        var i = 0
-        var interval = setInterval(() => {
-            this.setState({ title: this.state.title + this.state.titleWords[i] })
-            i++
-            if (i === this.state.titleWords.length) {
-                clearInterval(interval)
-                this.fillSubtitle()
-            }
-        }, 100);
-    }
+    // componentDidMount = () => {
+    //     var i = 0
+    //     var interval = setInterval(() => {
+    //         this.setState({ title: this.state.title + this.state.titleWords[i] })
+    //         i++
+    //         if (i === this.state.titleWords.length) {
+    //             clearInterval(interval)
+    //             this.fillSubtitle()
+    //         }
+    //     }, 100);
+    // }
 
     fillSubtitle() {
         var i = 0
@@ -58,8 +58,8 @@ class Intro extends Component {
         return (
             <div id="introBox" style={{ width: '100%', position: 'fixed', height: window.innerHeight, transition: 'ease-in, 200ms' }} >
                 <div id="introTitles" style={{ position: 'absolute', top: window.innerHeight / 2.7 }}>
-                    <h1 className="title">{this.state.title}</h1>
-                    <h2 className="subtitle">{this.state.subtitle}</h2>
+                    <h1 className="title">asdasd</h1>
+                    <h2 className="subtitle">asd</h2>
                 </div>
                 <div style={{ position: 'absolute', right: 0 }}>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/victor-galves-aro-4771611a4/"><img className="socialMediaIcons" alt="linkedin" style={{ padding: 5 }} src={linkedin} /></a>
