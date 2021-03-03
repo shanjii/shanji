@@ -1,4 +1,4 @@
-.introTitles {
+#introTitles {
     color: rgb(27, 27, 27);
     transition: ease-in, 200ms;
     margin-left: 10rem;
@@ -22,6 +22,7 @@
 
 .socialMediaIcons:hover{
     transition: ease-in, 100ms;
+    transform: translateY(5px);
     filter: invert(0.4);
 }
 
@@ -44,7 +45,7 @@
         font-size: 22px;
         text-align: center;
     }
-    .introTitles {
+    #introTitles {
         margin-left: 0;
         width: 100%;
     }

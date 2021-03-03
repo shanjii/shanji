@@ -5,9 +5,6 @@ import Arrow from '../assets/arrow.svg'
 import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
-window.onresize = () => {
-    document.getElementById("introBox").style.height = window.innerHeight + 'px'
-}
 
 class Intro extends Component {
     constructor() {
@@ -59,8 +56,8 @@ class Intro extends Component {
 
     render() {
         return (
-            <div style={{ width: '100%', position: 'fixed', height: window.innerHeight, transition: 'ease-in, 200ms' }} id="introBox" >
-                <div className="introTitles" style={{ position: 'absolute', top: '30vh' }}>
+            <div id="introBox" style={{ width: '100%', position: 'fixed', height: window.innerHeight, transition: 'ease-in, 200ms' }} >
+                <div id="introTitles" style={{ position: 'absolute', top: window.innerHeight / 2.7 }}>
                     <h1 className="title">{this.state.title}</h1>
                     <h2 className="subtitle">{this.state.subtitle}</h2>
                 </div>
