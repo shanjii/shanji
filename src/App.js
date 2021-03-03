@@ -1,5 +1,5 @@
 import Intro from './components/intro';
-import { Sidebar } from './components/navbar'
+// import { Sidebar } from './components/navbar'
 import { Content } from './components/content'
 import './styles/global.css'
 
